@@ -49,11 +49,10 @@ body {
 }
 
 .bgImage {
-    background-image: url("../images/sample1.jpg");
     background-size: cover;
     width: "100%";
     min-height: 605px;
-    box-shadow: inset 0 0 0 50vw rgba(0,0,0,0.1);
+    box-shadow: inset 0 0 0 50vw rgba(0,0,0,0.2);
 }
 
 .userImage {
@@ -62,9 +61,8 @@ body {
 }
 
 .bgImgContainer2 {
-    background-image: url("../images/sample1.jpg");
     background-size: cover;
     width: "100%";
     height: 290px;
-    box-shadow: inset 0 0 0 50vw rgba(0,0,0,0.1);
+    box-shadow: inset 0 0 0 50vw rgba(0,0,0,0.2);
 }
