@@ -28,10 +28,13 @@
 
             <div class="d-flex flex-row align-items-center">
                 <a class="mx-2 button">Subscribe!</a>
-                <button class="btn">
-                <img class="icons" src="<?php echo get_template_directory_uri() . '/assets/images/search.png' ?>"/> 
-                </button>
+                <div class="nav-item dropdown">
+                    <button class="btn btn_search">
+                        <img class="icons" src="<?php echo get_template_directory_uri() . '/assets/images/search.png' ?>"/> 
+                    </button>
+                    <?php get_search_form(); ?>
+                </div>
                 <img class="icons mx-2" src="<?php echo get_template_directory_uri() . '/assets/images/menu.png' ?>"/> 
-            <div>    
+            <div> 
         </nav>    
     </header>
