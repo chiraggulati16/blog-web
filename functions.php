@@ -1,4 +1,7 @@
 <?php
+include get_template_directory()."/inc/customizer.php";
+include get_template_directory()."/inc/theme_options.php";
+
 function setupTheme() {
 add_theme_support('post-thumbnails');
 add_theme_support('html5',array(

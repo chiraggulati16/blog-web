@@ -1,5 +1,6 @@
 <?php get_header(); ?>
-<div class="row g-4 mx-4">
+<div class="container">
+<div class="row g-4">
 <?php
 $sticky = get_option('sticky_posts');
 
@@ -19,7 +20,7 @@ if($query -> have_posts()) {
         <div class="card bgImage card-overlay-bottom card-grid-lg card-bg-scale"
         style="background-image: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id(), 'thumbnail' ); ?>);">
             <!-- Card Image overlay -->
-            <div class="card-img-overlay d-flex align-items-center p-3 p-sm-4">
+            <div class="card-img-overlay d-flex align-items-center">
                 <div class="w-100 mt-auto">
                     <!-- Card category -->
                     <a href="#" class="badge text-bg-danger mb-2">
@@ -60,7 +61,7 @@ if($query -> have_posts()) {
                 <div class="card bgImgContainer2 card-overlay-bottom card-grid-lg card-bg-scale"
                 style="background-image: url(<?php echo wp_get_attachment_url(get_post_thumbnail_id(), 'thumbnail' ); ?>);">
                     <!-- Card Image overlay -->
-                    <div class="card-img-overlay d-flex align-items-center p-3 p-sm-4">
+                    <div class="card-img-overlay d-flex align-items-center">
                         <div class="mt-auto">
                             <!-- Card category -->
                             <a href="#" class="badge text-bg-warning mb-2"><?php echo get_the_category()[0]->name; ?></a>
@@ -92,7 +93,7 @@ if($query -> have_posts()) {
                 <div class="card bgImgContainer2 card-overlay-bottom card-grid-lg card-bg-scale"
                 style="background-image: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id(), 'thumbnail' ); ?>);">
                     <!-- Card Image overlay -->
-                    <div class="card-img-overlay d-flex align-items-center p-3 p-sm-4">
+                    <div class="card-img-overlay d-flex align-items-center">
                         <div class="mt-auto">
                             <!-- Card category -->
                             <a href="#" class="badge <?php 
@@ -119,10 +120,11 @@ wp_reset_postdata();
         </div>
     </div>
 
+</div>
 
 </div>
 <section class="position-relative">
-    <div class="container m-4">
+    <div class="container mt-4">
         <div class="row">
             <div class="col-lg-9">
                 <div class="mb-4">

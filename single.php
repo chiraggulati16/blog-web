@@ -39,6 +39,13 @@ if(have_posts()):
                     <?php endif; ?>
 
                 </div>
+                <div class="col-lg-3">
+                <?php 
+                    if(is_active_sidebar('wp-blog-1')) {
+                        dynamic_sidebar('wp-blog-1');
+                    }
+                    ?>
+                </div>
             </div>
         </div>
         
